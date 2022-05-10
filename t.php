@@ -1,3 +1,4 @@
 <?php    
-echo "START";
+echo "START~~";
+echo "YES";
 ?>
