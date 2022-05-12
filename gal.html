@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Image Gallery</title>
+
+    <style>
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  background: rgba(150,150,150,0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 16%;
+  float: left;
+  cursor: pointer;
+}
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="full-img">
+    <img class="displayed-img" src="images/balloon-sq1.jpg">
+	  <div class="overlay"></div>
+      <button class="dark">Darken</button>
+	  </div>
+		<div class="thumb-bar"></div>
+	
+	  <br clear="all">
+	 <a href="" id="menu">Ok</a>
+<script src="gal.js"></script>
+  </body>
+</html>
