@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Example</title>
+</head>
+
+<body>
+
+<img src="imgs/1.gif" alt="" width="20">
+
+	
+ <script> 	
+var myImage = document.querySelector('img');
+//alert(myImage);
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'imgs/1.gif') {
+      myImage.setAttribute ('src','imgs/2.gif');
+    } else {
+      myImage.setAttribute ('src','imgs/1.gif');
+    }
+}
+</script>	
+	
+</body>
+</html>

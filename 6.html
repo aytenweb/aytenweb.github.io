@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rect</title>
+</head>
+
+<body>
+
+<ul>
+<li>лонДон
+<li>МанЧЕСТёр
+<li>БиРминГЕМ
+<li>лиВЕРпуЛЬ	
+</ul>
+
+<ul class="output">
+	
+</ul>	
+	
+<script>
+var list = document.querySelector('.output');
+//alert(list.innerHTML);
+list.innerHTML = '';
+var cities = ['лонДон', 'МанЧЕСТёр', 'БиРминГЕМ', 'лиВЕРпуЛЬ'];
+
+for(var i = 0; i < cities.length; i++) {
+ var input = cities[i];
+ var lower = input.toLowerCase();
+ var firstLetter = lower.slice(0,1);
+ var capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+ var result = capitalized;
+ var listItem = document.createElement('li');
+ listItem.textContent = result;
+ list.appendChild(listItem);
+
+}
+</script>	
+	
+</body>
+</html>
